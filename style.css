@@ -1,6 +1,4 @@
 body {
-    color: rgba(0,0,0,.5);
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: .5rem;
     top: 15%;
@@ -10,8 +8,6 @@ body {
 h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    color: rgba(0,0,0,.5);
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1rem;
     width: 100%;
@@ -20,8 +16,6 @@ h1 {
 h3 {
     font-size: 1rem;
     font-weight: 900;
-    color: rgba(0,0,0,.5);
-    text-align: center;
     text-transform: none;
     letter-spacing: 0.01rem;
 
@@ -30,11 +24,12 @@ body,
 h1,
 h3 {
     font-family: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
 }
 
 .color1,
 .color2 {
     border-radius: 8px;
     cursor: pointer;
-    /* border: none; */
 }
