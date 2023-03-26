@@ -1,18 +1,14 @@
 body {
-    text-transform: uppercase;
     letter-spacing: .5rem;
     top: 15%;
 	background: linear-gradient(to right, red , yellow); /* Standard syntax */
 }
-
 h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 1rem;
     width: 100%;
 }
-
 h3 {
     font-size: 1rem;
     font-weight: 900;
@@ -21,13 +17,16 @@ h3 {
 
 }
 body,
+h1 {
+    text-transform: uppercase;
+}
+body,
 h1,
 h3 {
     font-family: 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: center;
 }
-
 .color1,
 .color2 {
     border-radius: 8px;
