@@ -12,3 +12,36 @@ function selectColor() {
 
 color1.aEL;
 color2.aEl;
+
+
+function init() {
+    const header = document.getElementById("myHeader");
+    const copyButton = document.getElementById("copyButton");
+
+    if (header.innerText !== "") {
+        copyButton.style.display = "block";
+    }
+
+    const observer = new MutationObserver(function(mutationList, observer) {
+        for (var mutation of mutationList) {
+            if (mutation.type === "childList" && header.innerText !== "") {
+                copyButton.style.display = "block";
+            }
+        }
+    });
+
+    observer.observe(header, { attributes: true, childList: true, characterData: true });
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+function copyToClipboard(elementId) {
+    const copyText = document.getElementById(elementId);
+    const range = document.createRange();
+
+    range.selectNode(copyText);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+}

@@ -32,3 +32,21 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
 }
+.copy-button {
+    display: none;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: 0;
+    background: #ade8f4;
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background .4s;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background: #ffcdb2;
+    transform: scale(1.03);
+}
